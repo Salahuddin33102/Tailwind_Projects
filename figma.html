@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -33,15 +37,18 @@
     </style>
 </head>
 
-<body>
+<body class="max-w-full">
+
     <header>
-        <nav class="flex justify-between mt-7">
-            <div class="w-[200px] h-[40px] ml-12 items-center ">
-                <img src="./IMG-20230102-WA0038__1_-removebg-preview (1) 1.png" alt="">
+        <nav class="  lg:flex justify-between mt-7">
+            <div class=" lg:w-[200px] h-[40px] ml-2  sm:ml-12 items-center flex justify-between">
+                <div><img src="./IMG-20230102-WA0038__1_-removebg-preview (1) 1.png" alt=""></div>
+                <div><i class="fa-solid fa-bars text-black mr-4 text-2xl lg:hidden"></i></div>
             </div>
-            <div class="flex mr-12">
+
+            <div class=" hidden  lg:flex mr-12 ">
                 <ul class="flex items-center ">
-                    <li><a class="customColor text-sm mr-10 " href="">WHY SOCIAL MEDIAS</a></li>
+                    <li><a class="customColor text-sm mr-10  lg:hidden xl:block" href="">WHY SOCIAL MEDIAS</a></li>
                     <li><a class="text-[#C4C4C4;] mr-12" href="">WHAT WE DO</a></li>
                     <li><a class="text-[#C4C4C4;] mr-12" href="">PRICING</a></li>
                     <li><a class="text-[#C4C4C4;] mr-12" href="">FAQS</a></li>
@@ -51,28 +58,38 @@
                     class=" w-[135px] h-[45px] items-center  border border-solid bg-gradient-to-b from-[#8933BA] to-[#D82370] text-xs rounded-md text-white">GET
                     STARTED</button>
             </div>
+
+
         </nav>
     </header>
-    <div class="">
+
+    <!-- section 1 start -->
+    <div class="sm:hidden md:h-[176px] w-full px-5 mt-5 sm:mt-11 ">
+        <img class="" src="./image 18.png" alt="">
+    </div>
+    <div>
+
         <div class="flex ">
-            <div class="mt-24 ml-16 w-[590px] h-[176px]">
-                <h1 class="text-5xl font-bold leading-[62px]">Grow your reach and get more business with social
-                    media.Let's
-                    do this.</h1>
-                <p class="text-xl font-normal text-[#3A3A3A] leading-[36px] mt-5">
+
+            <div class=" mt-10 xl:mt-24 lg:ml-16 w-[590px] md:h-[176px]">
+
+                <h1
+                    class=" text-center sm:text-start mx-4 sm:ml-4 sm:mr-0 lg:ml-0 text-2xl lg:text-5xl font-bold xl:leading-[62px] ">
+                    Grow your reach and get more business with social media.Let's do this.</h1>
+                <p
+                    class=" lg:text-xl text-center sm:text-start mx-4 sm:mx-4 lg:mx-0  font-normal text-[#3A3A3A] lg:leading-[36px] mt-5">
                     Create, schedule, publish, and manage your content and ad campaigns across social networks from a
-                    single
-                    dashboard. We help maximize the impact of your social marketing by providing real-time insights.
+                    single dashboard. We help maximize the impact of your social marketing by providing real-time
+                    insights.
                 </p>
 
-                <div class="flex items-center mt-5">
+                <div class="flex items-center justify-center mt-5 mx-4 lg:mx-0">
                     <button
-                        class="border border-solid w-[132px] h-[53px] bg-gradient-to-b from-[#8933BA] to-[#D82370] text-white rounded-md flex items-center justify-center">Start
+                        class="border border-solid w-[100px] sm:w-[132px] h-[40px] sm:h-[53px] bg-gradient-to-b from-[#8933BA] to-[#D82370] text-white rounded-md flex items-center justify-center">Start
                         Today</button>
 
-                    <div class="w-[50px] ml-8 h-[53px] border  border-[#8933BA] rounded
-                    
-                    -md  flex justify-center items-center">
+                    <div
+                        class="w-[30px] sm:w-[50px] ml-4 sm:ml-8 h-[40px] sm:h-[53px] border  border-[#8933BA] rounded-md  flex justify-center items-center">
                         <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25"
                             fill="none">
                             <path
@@ -87,81 +104,313 @@
                             </defs>
                         </svg>
                     </div>
-                    <p class="customColor font-medium text-base ml-3">Book a Demo Today</p>
+                    <p class="customColor font-medium text-sm ml-3">Book a Demo Today</p>
                 </div>
             </div>
 
-            <div class="h-[460px] w-[568px] ml-11 mt-11">
+            <div class="hidden sm:block h-[460px] sm:mr-4 w-[568px] ml-11 mt-11 mr-9">
                 <img class="" src="./image 18.png" alt="">
             </div>
 
 
         </div>
     </div>
-    <div class="flex gap-10">
-        <div class="mt-32 ml-[122px] min-w-[40%] relative">
-            <img class="w-[532px] h-[520px]" src="./house image 2 why choose us.png" alt="">
-            <div class=" w-[64px] h-[431px] absolute top-10 -left-16  bg-gradient-to-b from-[#8933BA] to-[#D82370]">
+    <!-- section 1 end  -->
+
+    <!-- section 2 start  -->
+
+    <div class="flex flex-wrap sm:flex sm:flex-nowrap gap-10 mr-3">
+        <div class=" mt-10 sm:mt-0 lg:mt-32 ml-[42px] xl:ml-[122px] min-w-[40%] relative">
+            <img class=" w-[532px]  lg:h-[520px]" src="./house image 2 why choose us.png" alt="">
+            <div
+                class=" w-[30px] lg:w-[64px] h-[213px] sm:h-[240px] lg:h-[431px] absolute top-10 -left-[30px] lg:-left-16  bg-gradient-to-b from-[#8933BA] to-[#D82370]">
             </div>
         </div>
-        <div class="mt-32 mr-10">
-            <h1 class="text-4xl items-center">Manage social media in one place</h1>
-            <hr class="border-[1px] border-[#8933BA] w-[265px] my-6">
-            <p class="text-lg font-normal text-[#3A3A3A] mb-6">Social Medias are feeds that display the content from
+        <div class="lg:mt-32 lg:mr-10 ml-4 w-full">
+            <h1 class="sm:text-xl sm:font-semibold text-4xl items-center">Manage social media in one place</h1>
+            <hr class="border-[1px] border-[#8933BA] w-[265px] my-2 lg:my-6">
+            <p class="sm:text-base text-lg font-normal text-[#3A3A3A] mb-6">Social Medias are feeds that display the
+                content from
                 your connected social accounts and let you take part in industry conversations. You can use streams to
                 monitor activity across all of your accounts.</p>
-            <div class="flex h-[95px] w-[620px]  mb-5">
+            <div class="flex h-[95px] w-full xl:w-[620px] mb-5">
                 <div
-                    class="h-[70px] min-w-[70px] border  bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-md">
+                    class="h-[70px]  min-w-[70px] border  bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-md">
                     <img class="h-[40px] w-[40px]  " src="./bx-group.png" alt="">
                 </div>
                 <div class="ml-10">
                     <h3 class="text-xl font-bold text-[#3A3A3A]">Light up your profiles</h3>
-                    <p class="text-lg font-normal leading-7 text-[#3A3A3A] ">Schedule and publish content to all of your
+                    <p class=" text-base lg:text-lg font-normal leading-4 lg:leading-7 text-[#3A3A3A] ">Schedule and
+                        publish content to all of your
                         social profiles, track effectiveness in real time.</p>
                 </div>
             </div>
-            <div class="flex h-[95px]  w-[620px]  mb-5 ">
+            <div class="flex h-[95px] w-full  xl:w-[620px]  mb-10">
                 <div
                     class="h-[70px] min-w-[70px] border  bg-gradient-to-b from-[#8933BA] to-[#D82370] flex   justify-center items-center rounded-md">
                     <img class="h-[40px] w-[40px] " src="./bx-check-shield.png" alt="">
                 </div>
                 <div class="ml-10">
-                    <h3 class="text-xl font-bold text-[#3A3A3A]">Plan your content with ease</h3>
-                    <p class="text-lg font-normal leading-7 text-[#3A3A3A] ">View all of your social media content in
-                        one calendar. Easily see all your scheduled and published content.</p>
+                    <h3 class="text-xl font-bold text-[#3A3A3A] leading-5 ">Plan your content with ease</h3>
+                    <p class=" text-base lg:text-lg font-normal leading-4 lg:leading-7 text-[#3A3A3A] ">View all of your
+                        social media content inone calendar. Easily see all your scheduled and published content.</p>
                 </div>
             </div>
-            <div class="flex h-[95px]  w-[620px]  mb-5 ">
+            <div class="flex h-[95px] w-full  xl:w-[620px]  mt-3">
                 <div
                     class="h-[70px] min-w-[70px] border  bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-md">
                     <img class="h-[40px] w-[40px]  " src="./Group 1000005974.png" alt="">
                 </div>
                 <div class="ml-10">
-                    <h3 class="text-xl font-bold text-[#3A3A3A]">Stay on top of trends by posting on time</h3>
-                    <p class="text-lg font-normal leading-7 text-[#3A3A3A]">Set up customizable streams that let you
+                    <h3 class="text-xl font-bold text-[#3A3A3A] leading-5 mb-2 lg:mb-0">Stay on top of trends by posting
+                        on time</h3>
+                    <p class=" text-base lg:text-lg font-normal leading-4 lg:leading-7 text-[#3A3A3A]">Set up
+                        customizable streams that let you
                         monitor trends and stay notified. Get actionable insights on the best times to post without the
                         heavy data crunching.</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- section 2 end  -->
+
+    <!-- ===================== section 3 start========================  -->
+
     <div class="w-[full] h-[400px] mt-28" style="background-image: url('./Map\ image.png');">
         <div class="flex flex-col justify-center items-center">
-            <h1 class="text-white text-4xl font-semibold mt-10">Social medias is awesome for planning out social media
+            <h1 class="text-white text-base sm:text-xl text-center mx-2 lg:text-4xl font-semibold mt-10 ">Social medias
+                is awesome for
+                planning out social media
                 posts</h1>
-            <hr class="w-[647.5px] border-[1px]  border-[#8933BA] mt-6">
-            <p class="text-white mt-10 text-center text-2xl font-normal">We offer you a true concierge experience,
-                combining the expertise if you run multiple social media <br> accounts for your business.</p>
+            <hr class="w-[270px] sm:w-[300px] lg:w-[647.5px] border-[1px]  border-[#8933BA] mt-6">
+            <p class="text-white mt-10 text-center text-base sm:text-lg lg:text-2xl font-normal w-[70%]">We offer you a
+                true
+                concierge experience,
+                combining the expertise if you run multiple social media accounts for your business.</p>
             <button
                 class=" mt-10 w-[132px] h-[53px] bg-gradient-to-b from-[#8933BA] to-[#D82370] text-white rounded-md flex items-center justify-center font-medium text-sm">GET
                 STARTED</button>
         </div>
+    </div>
+
+    <!-- ===================== section 3 end========================  -->
+    <!--========================= section 4 start ==================== -->
+    <div class="px-4 mt-20 lg:flex gap-5  ">
+        <div class="lg:w-[50%] ">
+            <img class=" w-full xl:h-[400px] object-cover  " src="./img.png" alt="">
+        </div>
+
+        <div class="lg:w-[50%] ">
+            <h1 class="text-xl md:text-2xl font-bold">Still not sure where to start?</h1>
+            <hr class="border-[1px] border-[#8933BA] w-[200px] my-3">
+            <p class="text-[#3A3A3A] text-base md:text-lg">Share real-time insights by monitoring mentions of your
+                brand, company, products, and competitors. Measure the impact of your social marketing campaigns through
+                comprehensive social channel reporting.</p>
+            <div class="flex gap-4 mb-4 mt-10">
+                <img class="" src="./Group 1324.png" alt="">
+                <p class="text-base md:text-lg text-[#3A3A3A]">Choose the right plan</p>
+            </div>
+            <div class="flex gap-4 mb-4">
+                <img src="./Group 1324.png" alt="">
+                <p class="text-base md:text-lg text-[#3A3A3A]">Start your free trial</p>
+            </div>
+            <div class="flex gap-4 mb-4">
+                <img src="./Group 1324.png" alt="">
+                <p class="text-base md:text-lg text-[#3A3A3A]">Attend free classes for beginners</p>
+            </div>
+            <div class="flex gap-4 mb-4">
+                <img src="./Group 1324.png" alt="">
+                <p class="text-base md:text-lg text-[#3A3A3A]">Charging Less</p>
+            </div>
+            <button
+                class=" h-[50px] w-[179px] rounded-md text-white bg-gradient-to-b from-[#8933BA] to-[#D82370]  ">sounds
+                good to me</button>
+        </div>
 
 
     </div>
-    jjj
+    <!--=========== section-4 end ================ -->
+    <!-- =============section-5 start============== -->
+    <div class="flex justify-center items-center mt-20">
+        <div>
+            <h1 class="text-xl font-bold lg:text-2xl ">OUR SERVICES</h1>
+            <hr class="border-[1px] border-[#8933BA] w-[100px] lg:w-[140px] my-3 ">
+        </div>
+    </div>
+    <div class="md:flex flex-wrap w-full justify-center ">
+        <div class="px-3 border rounded-md mx-2 pt-4 mb-4  md:w-[47%] xl:w-[23%]">
+            <div
+                class="w-[60px] h-[60px] bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-2xl">
+                <img class="w-[30px] h-[30px]" src="./user 1.png" alt="">
+            </div>
+            <h3 class="text-lg pt-3 font-semibold">Light up your profiles</h3>
+            <p class="text-base text-[#3A3A3A] pt-4">Schedule and publish content to all of your social profiles, track
+                effectiveness in real time, and crank the volume on your top-performing content.</p>
+            <button
+                class="bg-gradient-to-b from-[#8933BA] to-[#D82370] w-[93px] h-[46px] text-white rounded-xl my-5">Hire
+                us</button>
+        </div>
+        <div class="px-3 border rounded-md mx-2 pt-4 mb-4   md:w-[47%] xl:w-[23%]">
+            <div
+                class="w-[60px] h-[60px] bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-2xl">
+                <img class="w-[30px] h-[30px]" src="./content-marketing 1.png" alt="">
+            </div>
+            <h3 class="text-lg pt-3 font-semibold">Plan your content with ease</h3>
+            <p class="text-base text-[#3A3A3A] pt-4">View all of your social media content in one calendar. Easily see
+                all your scheduled and published content, create new posts, and organize existing ones.</p>
+            <button
+                class="bg-gradient-to-b from-[#8933BA] to-[#D82370] w-[93px] h-[46px] text-white rounded-xl my-5">Hire
+                us</button>
+        </div>
+        <div class="px-3 border rounded-md mx-2 pt-4 mb-4   md:w-[47%] xl:w-[23%]">
+            <div
+                class="w-[60px] h-[60px] bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-2xl">
+                <img class="w-[30px] h-[30px]" src="./Group 1000006038.png" alt="">
+            </div>
+            <h3 class="text-lg pt-3 font-semibold">Stay on top of trends</h3>
+            <p class="text-base text-[#3A3A3A] pt-4">Set up customizable streams that let you monitor trends and stay
+                notified about your business, customers, competitors, or any topic that you’re curious about.</p>
+            <button
+                class="bg-gradient-to-b from-[#8933BA] to-[#D82370] w-[93px] h-[46px] text-white rounded-xl my-5">Hire
+                us</button>
+        </div>
+        <div class="px-3 border rounded-md mx-2 pt-4 mb-4  md:w-[47%] xl:w-[23%]">
+            <div
+                class="w-[60px] h-[60px] bg-gradient-to-b from-[#8933BA] to-[#D82370] flex justify-center items-center rounded-2xl">
+                <img class="w-[30px] h-[30px]" src="./Group 1000006039.png" alt="">
+            </div>
+            <h3 class="text-lg pt-3 font-semibold">Post on time, every time</h3>
+            <p class="text-base text-[#3A3A3A] pt-4">Get actionable insights on the best times to post without the heavy
+                data crunching. We have Professional Team to help you to grow your reach and get more business </p>
+            <button
+                class="bg-gradient-to-b from-[#8933BA] to-[#D82370] w-[93px] h-[46px] text-white rounded-xl my-5">Hire
+                us</button>
+        </div>
+    </div>
+    <div class="flex justify-center items-center">
+        <button class="border border-[#8933BA] rounded-md h-[50px] w-[208px] customColor">EXPLORE ALL FEATURES</button>
+    </div>
+    <!--================== section-5-end ============ -->
+
+    <!-- ====================section-6-start ==================== -->
+    <div class="px-4 mt-24 flex justify-center">
+        <div>
+            <h1 class="text-xl font-semibold md:text-4xl">Hundreds of independents already convinced</h1>
+            <hr class="border-[1px] border-[#8933BA] w-[100px] md:w-[300px] my-3 ">
+        </div>
+    </div>
+    <div class=" md:flex mx-3 mt-10 gap-10  justify-center">
+        <div class="relative md:items-center">
+            <div class="absolute -z-10 left-[187px] top-[-11px] hidden md:block">
+                <img class=" w-[196px] h-[154px]" src="./Dot.png" alt="">
+            </div>
+            <div class="">
+                <img class=" flex justify-center md:w-[389px] md:h-[389px]" src="./unsplash_MTZTGvDsHFY.png" alt="">
+            </div>
+
+            <div class="absolute -z-10 top-[12.75rem;] left-[10px] hidden md:block">
+                <img class="h-[120px] w-[120px]" src="./Ellipse 94.png" alt="">
+            </div>
+        </div>
+        <div class="md:w-[50%] lg:w-[32%] xl:w-[30%] ">
+            <h2 class=" mb-4 text-lg font-bold text-justify">Emily Clark</h2>
+            <p class="text-sm lg:text-lg">In 2017 it took me over 13 hours to do my taxes on TurboTax. Last year I was
+                able to reduce that time to 3 hours without even having to leave my house. Tax togo saved me time and
+                money.</p>
+            <button
+                class=" mt-4 mb-10 md:mb-0 bg-gradient-to-b from-[#8933BA] to-[#D82370] text-white text-sm md:text-base flex justify-center items-center w-[150px] h-[35px] md:w-[175px] md:h-[50px] rounded-md">REQUEST
+                A QUOTE</button>
+        </div>
+        <div class="relative">
+            <div class="md:hidden lg:block">
+                <img src="./Group 71.png" alt="">
+            </div>
+            <div
+                class="md:hidden lg:block  lg:h-[184px] lg:w-[166px] xl:w-[184px] w-[155px]  absolute left-[27px] bottom-[68px] -z-10 lg:left-[19px] lg:bottom-[103px] ">
+                <img src="./Ellipse 93.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--============= section-6-end ================= -->
+    <!-- =============================section-7-start ================ -->
+    <div class="bg-[#FAFAFA] border mx-3 rounded-md mt-5 md:hidden">
+        <h1 class="customColor text-center text-xl font-semibold mt-3">Subscribe Newsletter</h1>
+        <p class="text-center mt-3">We will update you with good news and promotions.</p>
+        <div class="border m-2 h-14 rounded-md flex items-center justify-around mt-3 bg-white">
+            <input type="type" placeholder="Enter your Email Adress" class=" border-none text-black text-sm">
+            <button class=" bg-gradient-to-b from-[#8933BA] to-[#D82370] text-white p-[5px] rounded-md ">Contact
+                us</button>
+        </div>
+    </div>
+    <!-- ==========tab seection============ -->
+    <div class="px-10 relative hidden md:block  mt-10">
+        <div
+            class=" bg-[#FAFAFA] h-fit  flex items-center justify-between -z-20 rounded-[95px] md:flex flex-wrap gap-16 lg:flex lg:flex-nowrap">
+            <div class="pl-8 md:w-full text-center lg:text-start mt-4 lg:mt-0">
+                <h1 class="customColor text-xl lg:text-3xl font-extrabold">Subscribe Newsletter</h1>
+                <p class=" mt-3 text-lg">We will update you with good news and promotions.</p>
+
+            </div>
+            <img src="./Rectangle 31.png" alt="" class=" pl-[172px]  lg:pb-0 lg:pl-0">
+        </div>
+        <div
+            class="border h-20 bg-white flex items-center w-[479px] justify-between rounded-3xl px-2 absolute md:top-64 md:right-52 lg:top-32 lg:right-32">
+            <input type="'text'" placeholder="Enter your Email Adress" class="text-xs lg:text-base">
+            <button class=" bg-gradient-to-b from-[#8933BA] to-[#D82370] text-white px-4 py-2 rounded-3xl">Contact
+                us</button>
+        </div>
+        <img src="./Rectangle 32.png" alt="" class="absolute md:top-72 lg:top-36 left-[17px] -z-10">
+        <img src="./Dot.png" alt="" class="absolute top-[-60px] right-1 -z-10 mr-4">
+    </div>
+    <!-- =====================section-7-end=================== -->
+    <!-- ======================section-8-start =================== -->
+     <hr class="border mt-16 w-full">
+    <div class="md:flex md:gap-10 xl:gap-16  mt-1">
+        <div class="flex flex-col justify-center md:justify-normal md:pl-[20px] items-center md:items-start md:w-[40%] "><img
+                src="./IMG-20230102-WA0038__1_-removebg-preview (1) 1.png" alt="" class="xl:pl-20">
+            <p class="p-4 md:p-0 text-[#565656] md:text-sm xl:px-20 ">Social Medias are feeds that display the content from your connected
+                social accounts and let you take part in industry conversations. You can use streams to monitor activity
+                across all of your accounts.</p>
+        </div>
+        <div class="md:flex ">
+            <div class="flex  justify-around p-4 md:p-0 md:justify-normal md:gap-[50px] xl:gap-[70px] ">
+                <div>
+                    <h2 class="text-[#D82370] font-semibold">Quick Links</h2>
+                    <ul>
+                        <li class="text-sm md:text-xs my-5"><a href="">Why Social Medias</a></li>
+                        <li class="text-sm md:text-xs my-5"><a href="">What We Do</a></li>
+                        <li class="text-sm md:text-xs my-5"><a href=""> Pricing</a></li>
+                        <li class="text-sm md:text-xs my-5"><a href="">FAQS </a></li>
+                        <li class="text-sm md:text-xs my-5"><a href="">Login</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[#D82370] font-semibold">Legal</h2>
+                    <ul>
+                        <li class="text-sm md:text-xs my-5"><a href=""> Terms of Service</a></li>
+                        <li class="text-sm md:text-xs my-5"><a href="">Privacy Policy</a></li>
+                        <li class="text-sm md:text-xs my-5"><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="mx-8 md:mx-8 xl:ml-20">
+                <h2 class="text-[#D82370] font-semibold">subscribe</h2>
+                <p class="md:text-xs">Subscribe to get latest property, blog news from us.</p>
+                <div class="flex border  justify-around items-center py-2 mt-5 border-[#D82370] rounded-lg">
+                    <input type="text" placeholder="Email adress" class="border-none">
+                    <img src="./Group 1000005980.png" alt="" class="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="h-[64px] bg-gradient-to-b from-[#8933BA] to-[#D82370] flex items-center px-10">
+        <p class="text-white ">Social Medias developed by AFS Square © 2022</p>
+        <img src="" alt="">
+    </div>
 
 </body>
+
 
 </html>

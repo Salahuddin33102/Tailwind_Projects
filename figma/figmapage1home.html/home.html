@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        Primary: '#e21b70',
+                    },
+                    boxShadow: {
+                        boxShadow: "0 2px 20px rgba(0, 0, 0, 0.12)",
+                        btnShadow: "0 5px 15px rgba(0, 0, 0, 0.35)",
+                        chatPopupShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .customColor {
+            background: linear-gradient(180deg, #8933BA 0%, #D82370 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FCFCFF]">
+    <div class="lg:flex">
+        <div class=" lg:hidden flex justify-between items-center text-center mt-5 mx-3">
+            <img src="./IMG-20230102-WA0038__1_-removebg-preview (1) 1.png" alt="" class="">
+            <div><i class="fa-solid fa-bars text-black mr-4 text-2xl lg:hidden"></i></div>
+
+
+        </div>
+        <div class="hidden lg:block border-r-2  w-[15%] h-[100vh] mx-5">
+            <img src="./IMG-20230102-WA0038__1_-removebg-preview (1) 1.png" alt="" class="mb-8 pr-4 pt-4 w-[176px]">
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006191.png" alt="">
+                <p class="customColor text-xs ml-3">Home</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006193.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Create Post</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006196.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Inspiration</p>
+
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006201.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Streams</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006202.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Planner</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006206.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Advertise</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006207.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Analytics</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006208.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">My Profile</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006209.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Upgrade my plan</p>
+            </div>
+            <div class="flex mb-4 items-center">
+                <img src="./Group 1000006210.png" alt="">
+                <p class="text-[#C7C7C7] text-xs ml-3">Logout</p>
+            </div>
+        </div>
+        <!--========== navbar======= -->
+        <!--================ section-1-start ================= -->
+        <div class="flex m-4  ">
+            <div>
+                <h1 class="text-3xl font-bold">Home</h1>
+                <p class="text-sm xl:text-lg text-[#C7C7C7]">Boost engagement and attract more followers by scheduling consistently.</p>
+            </div>
+            <div class="hidden lg:flex   border h-8 rounded-md items-center xl:ml-12 ">
+                <div><img src="./Group 1000006212.png" alt="" class="h-[20px] w-[20px]   "></div>
+                <div><input type="search" placeholder="Search everything" class="text-xs bg-[#FCFCFF]"></div>
+            </div>
+            <div class=" hidden md:flex md:ml-4 xl:ml-8 ">
+                <div class="ml-3"><img src="./Group 160.png" alt="">
+              
+                </div>
+                   <div class="ml">
+                   <h1 class="text-xs font-bold">John Doe</h1>
+                    <p class="text-xs text-[#C7C7C7]">User Account</p></div>
+           
+            </div>
+
+        </div>
+     
+        
+
+    </div>
+</body>
+
+</html>
